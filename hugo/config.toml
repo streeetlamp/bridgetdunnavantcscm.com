@@ -1,0 +1,8 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Centered Space, LLC – Counseling and Meditation"
+theme = "bd-cscm"
+
+[params]
+  name = "Bridget Dunnavant, PhD"
+  description = "Centered Space, LLC – Counseling and Meditation"

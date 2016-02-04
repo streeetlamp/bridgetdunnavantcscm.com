@@ -1,0 +1,21 @@
+{
+  "name": "bd-cscm-hugo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/streeetlamp/bridgetdunnavantcscm.com",
+  "authors": [
+    "Cody Whitby <hi@codywhitby.net>"
+  ],
+  "description": "bd-cscm-hugo-theme",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.6",
+    "breakpoint-sass": "~2.6.1"
+  }
+}

@@ -1,0 +1,18 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  padding: $full-space 0;
+}
+
+main {
+  @include container($wrapper-width);
+  background: $white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.23);
+}
+
+header {
+  @include span(full);
+  background: $black;
+  padding: $half-space 0;
+  border-radius: 2px 2px 0 0;
+}
