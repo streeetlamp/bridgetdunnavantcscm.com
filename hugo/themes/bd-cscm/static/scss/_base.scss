@@ -8,11 +8,55 @@ main {
   background: $white;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.23);
+  padding-bottom: $half-space;
 }
 
-header {
+.main-content {
   @include span(full);
-  background: $black;
-  padding: $half-space 0;
-  border-radius: 2px 2px 0 0;
+}
+
+.inner {
+  padding: 0 $full-space;
+}
+
+article.content {
+  margin: $half-space 0;
+  @include span(first 9 of 12);
+  @include post(last 3 of 12);
+
+  & + .content {
+    margin-top: 0;
+  }
+}
+
+.flower-divider {
+  text-align: center;
+  position: relative;
+  span {
+    background: $white;
+    padding: 0 $full-space;
+    position: relative;
+    top: 12px;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  border-bottom: 2px dashed $almost-white;
+  @include pre(first 1 of 12);
+  @include span(10 of 12);
+  @include post(last 1 of 12);
+}
+
+.contact-left {
+  @include span(first 6 of 12);
+}
+.contact-right {
+  @include span(last 6 of 12);
+}
+.contact-left, .contact-right {
+  i {
+    margin-right: $half-space / 2;
+    color: $almost-white;
+  }
 }

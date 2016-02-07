@@ -5,4 +5,9 @@ theme = "bd-cscm"
 
 [params]
   name = "Bridget Dunnavant, PhD"
+  creds = "Licensed Clinical Psychologist"
   description = "Centered Space, LLC – Counseling and Meditation"
+  company = "Centered Space, LLC"
+  tagline = "Counseling and Meditation"
+  email = "Bridget.Dunnavant1@gmail.com"
+  phone = "(804) 223 0626"

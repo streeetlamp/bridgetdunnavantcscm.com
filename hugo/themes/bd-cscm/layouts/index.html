@@ -5,8 +5,21 @@
 </head>
 <body>
   <main class="main">
+
     {{ partial "header.html" . }}
-    <h2>hi kids do you like rhyming?</h2>    
+
+    <section class="main-content">
+
+      <div class="inner">
+        {{ range first 10 .Data.Pages }}
+          {{ .Render "summary"}}
+        {{ end }}
+
+        {{ partial "contact.html" . }}
+      </div>
+
+    </section>
+
   </main>
 </body>
 </html>
