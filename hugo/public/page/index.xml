@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Centered Space, LLC – Counseling and Meditation</title>
+    <link>http://replace-this-with-your-hugo-site.com/page/</link>
+    <description>Recent content in Pages on Centered Space, LLC – Counseling and Meditation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2016 14:38:51 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://replace-this-with-your-hugo-site.com/page/about/</link>
+      <pubDate>Sun, 07 Feb 2016 14:38:51 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/page/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;hello:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Hello&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

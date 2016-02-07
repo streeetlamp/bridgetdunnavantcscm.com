@@ -1,0 +1,55 @@
+header {
+  @include span(full);
+  background: $black;
+  padding-top: $half-space / 2;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  color: $almost-white;
+  letter-spacing: .025em;
+
+  .inner {
+    @include clearfix;
+  }
+}
+
+.hero {
+  background-image: url('../img/pttrn.svg');
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  margin-top: $half-space / 2;
+  text-align: center;
+  padding: $full-space 0;
+  border-bottom: 2px solid $black;
+}
+
+.hero-content {
+  display: inline-block;
+  background: $bd-pale;
+  padding: ($half-space / 2) $full-space;
+  color: $black;
+  border: 3px solid $black;
+  border-radius: 1px;
+  text-transform: uppercase;
+  line-height: 1.4;
+
+  h2 {
+    letter-spacing: .065em;
+  }
+}
+
+.bd-logo {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  top: -30px;
+}
+
+.header-left {
+  @include span(first 6 of 12);
+}
+.header-right {
+  @include span(last 6 of 12);
+  text-align: right;
+}
