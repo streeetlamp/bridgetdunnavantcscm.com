@@ -7,6 +7,10 @@ header {
   color: $almost-white;
   letter-spacing: .025em;
 
+  @include breakpoint($bp-mobile) {
+    font-size: 85%;
+  }
+
   .inner {
     @include clearfix;
   }
@@ -40,7 +44,11 @@ header {
   background: $bd-pale;
   position: relative;
   z-index: 2;
-  padding: ($half-space / 2) $full-space;
+  padding: ($half-space / 2) $half-space;
+
+  @include breakpoint($bp-desktop) {
+    padding: ($half-space / 2) $full-space;
+  }
 }
 
 .flower {
@@ -79,12 +87,19 @@ header {
 }
 
 .bd-logo {
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   left: 50%;
-  margin-left: -70px;
-  top: -30px;
+  margin-left: -50px;
+  top: -70px;
+
+  @include breakpoint($bp-desktop) {
+    top: -30px;
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+  }
 }
 
 .header-left {
@@ -93,4 +108,11 @@ header {
 .header-right {
   @include span(last 6 of 12);
   text-align: right;
+}
+
+.header-left, .header-right {
+  @include breakpoint($bp-mobile) {
+    @include span(full);
+    text-align: center;
+  }
 }

@@ -5,6 +5,10 @@ p {
   cursor: text;
 }
 
+a, a:visited {
+  color: $mid-gray;
+}
+
 h1 {
   font-weight: 700;
   font-size: 1.75em;
@@ -13,6 +17,10 @@ h1 {
 
 h2, h3 {
   font-size: 1.15em;
+}
+
+h3 {
+  line-height: 2;
 }
 
 h2, h3, h4, h5 {

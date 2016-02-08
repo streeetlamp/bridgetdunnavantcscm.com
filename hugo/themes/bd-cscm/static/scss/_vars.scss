@@ -17,7 +17,7 @@ $root-font-family: $the-fam;
 $full-space: 80px;
 $half-space: $full-space / 2;
 
-//clearfix
+// clearfix //
 @mixin clearfix {
   zoom: 1;
   &:before, &:after { content: ""; display: table; }
@@ -27,3 +27,16 @@ $half-space: $full-space / 2;
 .clearfix { 
   @include clearfix; 
 }
+
+// breakpoint //
+$bp-481: 481px;
+$bp-under-481: max-width 480px;
+$bp-768: 768px;
+$bp-1030: 1030px;
+$bp-1240: 1240px;
+$bp-mobile: max-width 767px;
+$bp-desktop: min-width 768px;
+
+
+$bp-no-queries: false;
+$bp-no-query-fallbacks: true;
