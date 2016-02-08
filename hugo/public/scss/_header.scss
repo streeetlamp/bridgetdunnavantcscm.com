@@ -91,7 +91,7 @@ header {
   height: 80px;
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -40px;
   top: -70px;
 
   @include breakpoint($bp-desktop) {
