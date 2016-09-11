@@ -106,5 +106,6 @@ article.content {
   }
   @include breakpoint($bp-mobile) {
     @include span(full);
+    font-size: 80%;
   }
 }
