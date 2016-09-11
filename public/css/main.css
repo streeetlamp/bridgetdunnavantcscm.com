@@ -365,7 +365,8 @@ article.content {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    font-size: 85%; } }
 
 p {
   margin: 20px 0;
