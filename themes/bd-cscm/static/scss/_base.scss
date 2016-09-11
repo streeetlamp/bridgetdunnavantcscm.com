@@ -1,7 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
   padding: $full-space 0;
-  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -107,6 +106,5 @@ article.content {
   }
   @include breakpoint($bp-mobile) {
     @include span(full);
-    text-align: center;
   }
 }

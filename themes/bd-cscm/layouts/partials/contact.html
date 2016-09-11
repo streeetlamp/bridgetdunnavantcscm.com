@@ -2,11 +2,11 @@
   <h2>Contact and Hours</h2>
 
   <div class="contact-left contact-meta">
-    <h3><i class="fa fa-envelope-o"></i> <a href="mailto:{{ with .Site.Params.email }}{{ . }}{{ end }}">{{ with .Site.Params.email }}{{ . }}{{ end }}</a></h3>
+    <h3><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{ with .Site.Params.email }}{{ . }}{{ end }}">{{ with .Site.Params.email }}{{ . }}{{ end }}</a></h3>
   </div>
 
   <div class="contact-right contact-meta">
-    <h3><i class="fa fa-phone"></i> {{ with .Site.Params.phone }}{{ . }}{{ end }}</h3>
+    <h3><i class="fa fa-phone" aria-hidden="true"></i> {{ with .Site.Params.phone }}{{ . }}{{ end }}</h3>
   </div>
 
   <div class="hours contact-meta">
