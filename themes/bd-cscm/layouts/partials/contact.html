@@ -1,11 +1,17 @@
 <article class="content contact">
-  <h2>Contact</h2>
+  <h2>Contact and Hours</h2>
 
-  <div class="contact-left">
+  <div class="contact-left contact-meta">
     <h3><i class="fa fa-envelope-o"></i> <a href="mailto:{{ with .Site.Params.email }}{{ . }}{{ end }}">{{ with .Site.Params.email }}{{ . }}{{ end }}</a></h3>
   </div>
 
-  <div class="contact-right">
+  <div class="contact-right contact-meta">
     <h3><i class="fa fa-phone"></i> {{ with .Site.Params.phone }}{{ . }}{{ end }}</h3>
+  </div>
+
+  <div class="hours contact-meta">
+    <h3><i class="fa fa-calendar-o" aria-hidden="true"></i>
+    {{ with .Site.Params.hours }}{{ . }}{{ end }}
+  </h3>
   </div>
 </article>

@@ -9,19 +9,43 @@ bd-hugo-theme
   .clearfix:after {
     clear: both; }
 
-/*! sanitize.css v3.1.1 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
+/*! sanitize.css v3.3.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
 /*
  * Normalization
  */
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
 audio:not([controls]) {
   display: none; }
+
+b,
+strong {
+  font-weight: bolder; }
 
 button {
   -webkit-appearance: button;
   overflow: visible; }
 
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+button,
+select {
+  text-transform: none; }
+
 details {
   display: block; }
+
+hr {
+  overflow: visible; }
 
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -47,9 +71,6 @@ pre {
 
 progress {
   display: inline-block; }
-
-small {
-  font-size: 75%; }
 
 summary {
   display: block; }
@@ -83,26 +104,77 @@ textarea {
   text-decoration: inherit;
   vertical-align: inherit; }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
 /*
  * Opinionated defaults
  */
+* {
+  margin: 0;
+  padding: 0; }
+
 *,
 ::before,
 ::after {
   border-style: solid;
   border-width: 0; }
 
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+  select::-ms-expand {
+    display: none; }
+  select::-ms-value {
+    color: currentColor; }
+
+svg {
+  fill: currentColor; }
+
+[aria-busy="true"] {
+  cursor: progress; }
+
+[aria-controls] {
+  cursor: pointer; }
+
+[aria-disabled] {
+  cursor: default; }
+
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute; }
+  [hidden][aria-hidden="false"]:focus {
+    clip: auto; }
+
+/*
+ * Configurable defaults
+ */
 * {
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0; }
+  background-repeat: no-repeat; }
 
 :root {
   background-color: #D4D4CB;
   box-sizing: border-box;
   color: #000000;
   cursor: default;
-  font: 100% / 1.5 "Open Sans", sans-serif; }
+  font: 100%/1.5 "Open Sans", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -119,16 +191,8 @@ button,
 input,
 select,
 textarea {
-  background-color: transparent; }
-
-button,
-input,
-select,
-textarea {
-  color: inherit;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit; }
+  background-color: transparent;
+  color: inherit; }
 
 button,
 [type="button"],
@@ -161,13 +225,8 @@ nav ol,
 nav ul {
   list-style: none; }
 
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none; }
-  select::-ms-expand {
-    display: none; }
-  select::-ms-value {
-    color: currentColor; }
+small {
+  font-size: 75%; }
 
 table {
   border-collapse: collapse;
@@ -186,36 +245,10 @@ textarea {
   color: #ffffff;
   text-shadow: none; }
 
-[aria-busy="true"] {
-  cursor: progress; }
-
-[aria-controls] {
-  cursor: pointer; }
-
-[aria-disabled] {
-  cursor: default; }
-
-[hidden][aria-hidden="false"] {
-  clip: rect(0 0 0 0);
-  display: inherit;
-  position: absolute; }
-  [hidden][aria-hidden="false"]:focus {
-    clip: auto; }
-
-a,
-area,
-button,
-input,
-label,
-select,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation;
-      touch-action: manipulation; }
-
 body {
   -webkit-font-smoothing: antialiased;
-  padding: 80px 0; }
+  padding: 80px 0;
+  font-family: "Open Sans", sans-serif; }
 
 main {
   max-width: 1320px;
@@ -324,12 +357,12 @@ article.content {
   float: right;
   margin-right: 0; }
 
-.contact-left i, .contact-right i {
+.contact-meta i {
   margin-right: 20px;
   color: #DDD; }
 
 @media (max-width: 767px) {
-  .contact-left, .contact-right {
+  .contact-meta {
     width: 100%;
     float: left;
     margin-left: 0;

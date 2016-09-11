@@ -1,6 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   padding: $full-space 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -99,7 +100,7 @@ article.content {
 .contact-right {
   @include span(last 6 of 12);
 }
-.contact-left, .contact-right {
+.contact-meta {
   i {
     margin-right: $half-space / 2;
     color: $almost-white;
