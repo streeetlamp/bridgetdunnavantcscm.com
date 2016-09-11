@@ -99,13 +99,12 @@ article.content {
 .contact-right {
   @include span(last 6 of 12);
 }
-.contact-left, .contact-right {
+.contact-meta {
   i {
     margin-right: $half-space / 2;
     color: $almost-white;
   }
   @include breakpoint($bp-mobile) {
     @include span(full);
-    text-align: center;
   }
 }
