@@ -53,3 +53,4 @@ temp/
 *.codekit
 *.scssc
 .sass-cache
+public/
