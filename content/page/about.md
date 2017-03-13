@@ -14,3 +14,5 @@ My approach to therapy is broadly humanistic as I seek to build with my clients,
 When working with couples that are seeking to heal from hurt, re-connect, or just improve the quality of their relationship, my style largely mirrors that of my approach with individual clients. I help couples to explore and identify patterns or difficulties that hinder authentic and secure relating, then increase honest communication through emotional expression and risk-taking in the context of the relationship, and ultimately create more compassionate understanding and connection.
 
 In addition to holistic and meditative practices and the use of body in therapy, I've incorporated other creative tools into my work with clients, such as metaphor, poetry, art, and music. My work is client-focused and informed by feminism, multiculturalism, and social justice and systems perspectives.
+
+Sorry quick test.
