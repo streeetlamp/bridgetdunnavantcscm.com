@@ -1,8 +1,8 @@
-baseurl = "http://bridgetdunnavantcscm.com/"
+baseurl = "https://bridgetdunnavantcscm.com/"
 canonifyurls = true
 languageCode = "en-us"
 theme = "bd-cscm"
-title = "Centered Space, LLC – Counseling and Meditation"
+title = "Centered Space, LLC â€“ Counseling and Meditation"
 [params]
 company = "Centered Space, LLC"
 creds = "Licensed Clinical Psychologist"
