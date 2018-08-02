@@ -1,0 +1,111 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  padding: $full-space 0;
+}
+
+main {
+  @include container($wrapper-width);
+  background: $white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.23);
+  padding-bottom: $half-space;
+}
+
+.main-content {
+  @include span(full);
+}
+
+.inner {
+  padding: 0 $half-space;
+
+  @include breakpoint($bp-desktop) {
+    padding: 0 $full-space;
+  }
+}
+
+article.content {
+  margin: $half-space 0;
+  @include span(full);
+
+  @include breakpoint($bp-desktop) {
+    @include span(first 9 of 12);
+    @include post(last 3 of 12);
+  }
+
+  & + .content {
+    margin-top: 0;
+  }
+
+  &.bio-and-credentials {
+    @include breakpoint($bp-desktop) {
+      @include span(first 11 of 12);
+      @include post(last 1 of 12);
+    }
+  }
+
+  &.contact {
+    @include span(full);
+  }
+}
+
+.flower-divider {
+  text-align: center;
+  position: relative;
+  span {
+    background: $white;
+    padding: 0 $full-space;
+    position: relative;
+    top: 12px;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  background-image: linear-gradient(to right, $bd-pale 12%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 15px 1px;
+  background-repeat: repeat-x;
+  @include pre(first 1 of 12);
+  @include span(10 of 12);
+  @include post(last 1 of 12);
+}
+
+.bio-and-credentials {
+  @include breakpoint($bp-desktop) {
+    p:first-of-type {
+      @include span(first 7.5 of 12);
+      @include post(.5 of 12);
+    }
+  }
+}
+
+.bio-img {
+  @include span(full);
+  padding-top: 62.5%;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 0;
+  border: 1px solid #EEE;
+
+  @include breakpoint($bp-desktop) {
+    @include span(last 4 of 12);
+    padding-top: 24.5%;
+  }
+}
+
+.contact-left {
+  @include span(first 6 of 12);
+}
+.contact-right {
+  @include span(last 6 of 12);
+}
+.contact-meta {
+  i {
+    margin-right: $half-space / 2;
+    color: $almost-white;
+  }
+  @include breakpoint($bp-mobile) {
+    @include span(full);
+    font-size: 85%;
+  }
+}

@@ -1,0 +1,42 @@
+// color //
+$bd-pale: #D4D4CB;
+$root-background-color: $bd-pale;
+
+$bd-green: #80A189;
+
+$white: #FFF;
+$almost-white: #DDD;
+$black: #444;
+$mid-gray: #707070;
+
+// type //
+$the-fam: 'Open Sans', sans-serif;
+$root-font-family: $the-fam;
+
+// size //
+$full-space: 80px;
+$half-space: $full-space / 2;
+
+// clearfix //
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+}
+
+.clearfix { 
+  @include clearfix; 
+}
+
+// breakpoint //
+$bp-481: 481px;
+$bp-under-481: max-width 480px;
+$bp-768: 768px;
+$bp-1030: 1030px;
+$bp-1240: 1240px;
+$bp-mobile: max-width 767px;
+$bp-desktop: min-width 768px;
+
+
+$bp-no-queries: false;
+$bp-no-query-fallbacks: true;
