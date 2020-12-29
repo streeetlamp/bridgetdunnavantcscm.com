@@ -13,6 +13,7 @@
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-sass": "latest"
+    "grunt-sass": "latest",
+    "npm": "latest"
   }
 }
