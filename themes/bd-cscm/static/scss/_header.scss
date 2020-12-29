@@ -54,6 +54,7 @@ header {
 .flower {
   position: absolute;
   z-index: 1;
+
   img {
     width: 16px;
     height: 16px;
@@ -63,14 +64,17 @@ header {
     left: -8px;
     top: -14px;
   }
+
   &:nth-of-type(2) {
     right: -8px;
     top: -14px;
   }
+
   &:nth-of-type(3) {
     left: -8px;
     bottom: -10px;
   }
+
   &:nth-of-type(4) {
     right: -8px;
     bottom: -10px;
@@ -105,12 +109,14 @@ header {
 .header-left {
   @include span(first 6 of 12);
 }
+
 .header-right {
   @include span(last 6 of 12);
   text-align: right;
 }
 
-.header-left, .header-right {
+.header-left,
+.header-right {
   @include breakpoint($bp-mobile) {
     @include span(full);
     text-align: center;
